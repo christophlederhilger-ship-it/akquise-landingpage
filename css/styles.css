@@ -242,22 +242,20 @@ body{
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding: 60px 7vw;
+  padding: 40px 7vw;
   box-sizing: border-box;
 }
 
 .photo-card--full {
-  width: 100%;
-  max-width: 320px;
-  max-height: calc(100vh - 120px);
+  width: min(75vw, 360px);
+  max-height: 80vh;
 }
 
 .photo-card--full img {
   width: 100%;
   height: auto;
-  max-height: calc(100vh - 180px);
+  max-height: calc(80vh - 60px);
   object-fit: cover;
-  border-radius: 4px;
 }
 
 /* ═══════════════════════════════════════════
@@ -297,8 +295,9 @@ body{
   /* Hide photo-card inside studio slide on mobile (gets its own slide) */
   .studio .photo-card { display: none !important; }
 
-  /* Studio slide */
-  .studio { padding: 44px 0 0; }
+  /* Studio slide: vertically centered content, refs ticker stays at bottom */
+  .studio { padding: 44px 0 0; justify-content: center; }
+  .studio > * { flex-shrink: 0; }
   .kicker { font-size: 12px; margin-bottom: 16px; }
   .studio h2 { font-size: clamp(30px, 10vw, 52px); margin-bottom: 20px; }
   .studio-cols { grid-template-columns: 1fr; gap: 20px; justify-items: start; }
