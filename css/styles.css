@@ -247,14 +247,14 @@ body{
 }
 
 .photo-card--full {
-  width: min(75vw, 360px);
-  max-height: 80vh;
+  width: min(88vw, 440px);
+  max-height: 82vh;
 }
 
 .photo-card--full img {
   width: 100%;
   height: auto;
-  max-height: calc(80vh - 60px);
+  max-height: calc(82vh - 70px);
   object-fit: cover;
 }
 
@@ -295,8 +295,8 @@ body{
   /* Hide photo-card inside studio slide on mobile (gets its own slide) */
   .studio .photo-card { display: none !important; }
 
-  /* Studio slide: vertically centered content, refs ticker stays at bottom */
-  .studio { padding: 44px 0 0; justify-content: center; }
+  /* Studio slide: shift content up above refs ticker (~56px) */
+  .studio { padding: 20px 0 80px !important; justify-content: center; }
   .studio > * { flex-shrink: 0; }
   .kicker { font-size: 12px; margin-bottom: 16px; }
   .studio h2 { font-size: clamp(30px, 10vw, 52px); margin-bottom: 20px; }
@@ -342,7 +342,7 @@ body{
   .nav {
     right: 16px;
     top: auto;
-    bottom: 24px;
+    bottom: 72px;
     transform: none;
   }
   /* Fix color: explicitly set on buttons to override browser default blue */
