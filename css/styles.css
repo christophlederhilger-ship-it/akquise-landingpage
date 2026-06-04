@@ -233,6 +233,29 @@ body{
   .manifest h2 .l{opacity:1!important;transform:none!important;}
 }
 
+/* ═══ MOBILE PHOTO SLIDE ═══ */
+.mobile-photo-slide { display: none; }
+
+.mobile-photo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.photo-card--full {
+  width: min(78vw, 340px);
+  max-width: 100%;
+}
+
+.photo-card--full img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 /* ═══════════════════════════════════════════
    MOBILE ENHANCEMENTS (QR-code visitors)
    Primary target: ~390px wide phone screens
@@ -263,6 +286,12 @@ body{
   .manifest h2 { font-size: clamp(26px, 8vw, 42px); max-width: 100%; }
   .manifest-aside { font-size: clamp(13px, 3.5vw, 16px); }
   .manifest-scrollrow { margin-top: 28px; }
+
+  /* Mobile photo slide: show on mobile */
+  .mobile-photo-slide { display: flex; }
+
+  /* Hide photo-card inside studio slide on mobile (gets its own slide) */
+  .studio .photo-card { display: none; }
 
   /* Studio slide */
   .studio { padding: 44px 0 0; }
