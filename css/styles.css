@@ -339,37 +339,18 @@ body{
     font-size: 10px;
   }
 
-  /* Nav: move to bottom center on mobile */
+  /* Nav: move to bottom right on mobile, same visual style as desktop */
   .nav {
-    right: auto;
+    right: 16px;
     top: auto;
-    bottom: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    gap: 10px;
-    background: rgba(0,0,0,.08);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 8px 14px;
-    border-radius: 999px;
+    bottom: 24px;
+    transform: none;
   }
-  /* Fix color: explicitly inherit from nav context, override browser blue */
-  .nav.ctx-dark { color: var(--white); }
-  .nav.ctx-light { color: var(--black); }
+  /* Fix color: explicitly set on buttons to override browser default blue */
   .nav.ctx-dark button { color: var(--white); }
   .nav.ctx-light button { color: var(--black); }
-
-  /* Each button: line on top, num below */
-  .nav button {
-    flex-direction: column;
-    gap: 4px;
-    padding: 4px 2px;
-  }
-  .nav .line { width: 16px; height: 2px; }
-  .nav button.active .line { width: 26px; }
-  .nav .num { font-size: 8px; opacity: .6; }
-  .nav button.active .num { opacity: 1; }
+  .nav .line { width: 14px; }
+  .nav button.active .line { width: 24px; }
 
   /* Wrap padding */
   .wrap { padding: 0 5vw; }
