@@ -242,16 +242,20 @@ body{
   justify-content: center;
   height: 100%;
   width: 100%;
+  padding: 60px 7vw;
+  box-sizing: border-box;
 }
 
 .photo-card--full {
-  width: min(78vw, 340px);
-  max-width: 100%;
+  width: 100%;
+  max-width: 320px;
+  max-height: calc(100vh - 120px);
 }
 
 .photo-card--full img {
   width: 100%;
   height: auto;
+  max-height: calc(100vh - 180px);
   object-fit: cover;
   border-radius: 4px;
 }
@@ -291,7 +295,7 @@ body{
   .mobile-photo-slide { display: flex; }
 
   /* Hide photo-card inside studio slide on mobile (gets its own slide) */
-  .studio .photo-card { display: none; }
+  .studio .photo-card { display: none !important; }
 
   /* Studio slide */
   .studio { padding: 44px 0 0; }
