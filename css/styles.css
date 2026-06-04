@@ -339,10 +339,37 @@ body{
     font-size: 10px;
   }
 
-  /* Side nav: move a bit further from edge */
-  .nav { right: 10px; gap: 12px; }
-  .nav .line { width: 14px; }
-  .nav button.active .line { width: 24px; }
+  /* Nav: move to bottom center on mobile */
+  .nav {
+    right: auto;
+    top: auto;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 10px;
+    background: rgba(0,0,0,.08);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 8px 14px;
+    border-radius: 999px;
+  }
+  /* Fix color: explicitly inherit from nav context, override browser blue */
+  .nav.ctx-dark { color: var(--white); }
+  .nav.ctx-light { color: var(--black); }
+  .nav.ctx-dark button { color: var(--white); }
+  .nav.ctx-light button { color: var(--black); }
+
+  /* Each button: line on top, num below */
+  .nav button {
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px 2px;
+  }
+  .nav .line { width: 16px; height: 2px; }
+  .nav button.active .line { width: 26px; }
+  .nav .num { font-size: 8px; opacity: .6; }
+  .nav button.active .num { opacity: 1; }
 
   /* Wrap padding */
   .wrap { padding: 0 5vw; }

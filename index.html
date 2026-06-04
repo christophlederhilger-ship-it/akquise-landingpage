@@ -137,6 +137,12 @@
 
 <nav class="nav ctx-light" id="nav"></nav>
 
+<script>
+  if (window.innerWidth > 600) {
+    var mps = document.querySelector('.mobile-photo-slide');
+    if (mps) mps.parentNode.removeChild(mps);
+  }
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
