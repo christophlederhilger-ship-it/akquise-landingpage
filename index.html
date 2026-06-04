@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aggregat — Saurer Radler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- ═══ 01 · HERO ═══ -->
+  <section class="slide bg-hero active" data-ctx="light" data-name="Start">
+    <div class="bubble-field" data-bubbles="brown"></div>
+    <div class="wrap">
+    <div class="hero go">
+      <h1>
+        <span class="row"><span>du hast uns</span></span>
+        <span class="row"><span><span class="yelword">gefunden.</span></span></span>
+      </h1>
+      <p class="hero-sub">Das erste Brand Design Studio, das sich selbst nicht zu wichtig nimmt. <b>Deine Marke dafür umso mehr.</b></p>
+      <div class="hero-scrollrow">
+        <button class="pill-btn" data-next>Erzählt mir mehr! <span class="arr"></span></button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══ 02 · MANIFEST ═══ -->
+  <section class="slide bg-white below" data-ctx="light" data-name="Haltung">
+    <div class="bubble-field" data-bubbles="faint"></div>
+    <div class="wrap">
+    <div class="manifest go" id="manifest">
+      <h2>
+        <span class="l">Sichtbar sein war nie einfacher.</span>
+        <span class="l">Das Richtige sagen nie <span class="hl">schwieriger</span>.</span>
+        <span class="l">Wir machen den Unterschied.</span>
+      </h2>
+      <p class="manifest-aside">(Gute Kommunikation schafft Relevanz. Und sieht dabei verdammt gut aus.)</p>
+      <div class="manifest-scrollrow">
+        <button class="pill-btn" data-next>Wer "wir" ist <span class="arr"></span></button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══ 03 · STUDIO ═══ -->
+  <section class="slide bg-dark below" data-ctx="dark" data-name="Studio">
+    <div class="bubble-field" data-bubbles="light"></div>
+    <div class="wrap">
+    <div class="studio">
+      <h2>aggregat erzeugt <span class="accent">anziehungskraft.</span></h2>
+      <div class="studio-cols">
+        <div class="studio-text">
+          <p class="studio-body">Seit über 10 Jahren kämpfen wir gegen die Austauschbarkeit in der Markenkommunikation. Wir tauchen tief in die Zeichensysteme von Unternehmen ein und finden die kreativen Chancen, die andere übersehen.</p>
+          <p class="studio-body">Radikal aus Kundensicht gedacht. <strong>Eine Marke, die differenziert — und langfristig anzieht.</strong></p>
+          <div class="studio-facts">
+            <span class="fact"><span class="d"></span>10+ Jahre</span>
+            <span class="fact"><span class="d"></span>Schnell &amp; zuverlässig</span>
+            <span class="fact"><span class="d"></span>Keine Overheads</span>
+            <span class="fact"><span class="d"></span>Bester Studio-Espresso Wiens</span>
+          </div>
+        </div>
+
+        <figure class="photo-card">
+          <span class="tape tape-tl"></span>
+          <span class="tape tape-br"></span>
+          <img id="studioPhoto" alt="Christoph und Flo vor dem aggregat-Studio in Wien" loading="lazy">
+          <figcaption>Feierabend. Garbergasse, 1060.</figcaption>
+        </figure>
+
+        <div class="studio-svc">
+          <p class="spez">Spezialitäten des Hauses</p>
+          <div class="svc" aria-label="Brand Strategy, Design, Communication, Websites">
+            <span class="fixed">brand</span>
+            <span class="rotor" id="rotor">
+              <span class="sizer">communication</span>
+              <span class="word show">strategy</span>
+              <span class="word">design</span>
+              <span class="word">communication</span>
+              <span class="word">websites</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="refs">
+      <div class="refs-track" id="refsTrack"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 04 · CONTACT ═══ -->
+  <section class="slide bg-hero below" data-ctx="light" data-name="Kontakt">
+    <div class="bubble-field" data-bubbles="brown"></div>
+    <div class="wrap">
+    <div class="contact">
+      <h2>
+        <span class="row">sag</span>
+        <span class="row">hi.</span>
+      </h2>
+      <p class="contact-sub">Geht da noch mehr bei eurer Kommunikation? <b>Beste Idee.</b> Reden wir drüber.</p>
+      <div class="contact-cta">
+        <a href="mailto:hi@aggregat.studio" class="bigpill" aria-label="Schreib uns">
+          <span class="scroller">
+            <span>Schreib uns</span><span>Schreib uns</span><span>Schreib uns</span><span>Schreib uns</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-foot">
+      <span class="radler">Genieß deinen Sauren Radler. Bis bald.</span>
+      <span class="addr">Garbergasse 18 · 1060 Wien</span>
+    </div>
+    </div>
+  </section>
+
+</div>
+
+<nav class="nav ctx-light" id="nav"></nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
